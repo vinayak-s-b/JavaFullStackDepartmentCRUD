@@ -1,4 +1,4 @@
-# JavaFullStackDepartmentCRUD - Full Stack Project
+# JavaFullStackDepartmentCRUD
 
 
 ## Project Overview
