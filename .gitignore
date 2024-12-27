@@ -1,0 +1,68 @@
+# .gitignore for Java Spring Boot and React Project
+
+# Java (Spring Boot)
+# Compiled class files
+*.class
+
+# Logs
+*.log
+
+# Maven specific
+target/
+!.mvn/wrapper/maven-wrapper.jar
+mvnw
+mvnw.cmd
+
+# Gradle specific
+.gradle/
+build/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Eclipse specific
+.project
+.classpath
+.settings/
+
+# VS Code specific
+.vscode/
+
+# Operating system files
+.DS_Store          # macOS
+Thumbs.db          # Windows
+
+# Node.js (React)
+node_modules/
+
+# React build output
+build/
+dist/
+
+# npm logs
+npm-debug.log*
+
+# dotenv environment variable files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE & Editor settings
+.vscode/
+.idea/
+
+# IntelliJ IDEA specific file
+*.iml
+
+# Optional: Backup files
+*~
+
+# Optional: JUnit test result directory
+test-outputs/
+
+# Optional: Spring Boot application temporary files
+*.h2.db
+*.db

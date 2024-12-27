@@ -1,0 +1,18 @@
+.nav{
+    display: flex;
+        width: 60%;
+        margin: 5px auto 5px;
+        justify-content: space-between;
+        align-items: center;
+}
+.servicName{
+    font-size: large;
+    font-style: normal;
+    font-weight: bold;
+    color:rgb(30, 30, 63)
+}
+.searchbar{
+    width: 45%;
+    height: 30px;
+    border-color: darkgray;
+}
