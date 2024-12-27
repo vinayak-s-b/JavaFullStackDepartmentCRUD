@@ -79,6 +79,10 @@ After setting up both the DepartmentService(Backend) and dept_service(frontend),
 
 The React frontend will interact with the Spring Boot backend via API calls to display and manage departments.
 
+---
+Below is an image demonstrating the project:
+
+![Home Page Image](images/Home.PNG)
 
 
 
