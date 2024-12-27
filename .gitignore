@@ -50,19 +50,8 @@ npm-debug.log*
 .env.test.local
 .env.production.local
 
-# IDE & Editor settings
-.vscode/
-.idea/
-
-# IntelliJ IDEA specific file
-*.iml
-
 # Optional: Backup files
 *~
 
 # Optional: JUnit test result directory
 test-outputs/
-
-# Optional: Spring Boot application temporary files
-*.h2.db
-*.db
