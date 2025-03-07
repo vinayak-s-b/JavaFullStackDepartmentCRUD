@@ -4,6 +4,7 @@
 ## Project Overview
 
 This project is a full-stack web application that allows users to perform **CRUD** (Create, Read, Update, Delete) operations on **Department** data. The project is built with a **Java Spring Boot** backend (for the CRUD logic) and a **React** frontend (for the user interface). It is designed to handle a department management system where you can add, view, update, and delete department records.
+Additionally, this project includes **comprehensive unit testing** using **JUnit 5 and Mockito**, achieving **98% test coverage** across the entire application.
 
 ---
 
@@ -30,11 +31,21 @@ This project is a full-stack web application that allows users to perform **CRUD
   - Spring Boot
   - Spring Data JPA (for database interaction)
   - Spring Boot REST API (for communication between frontend and backend)
+  - JUnit & Mockito (for unit testing)
   
 - **Database**: 
   - MySQL Database (or you can use H2/PostgreSQL depending on your setup)
 
 ---
+
+## Testing Highlights
+  - Unit tests for Controller, Service, and Repository layers.
+  - Mocking with Mockito for efficient test execution.
+  - Use of MockMvc for testing REST API endpoints.
+  - H2 in-memory database for repository testing.
+    
+---
+
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
