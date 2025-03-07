@@ -43,25 +43,25 @@ class DepartmentServiceTest {
     }
 
     @Test
-    void getDepartmentById_test() {
+    void getDepartmentByIdTest() {
         mock(Department.class);
         when(departmentRepository.getDepartmentById(anyLong())).thenReturn(department);
         assertEquals(department.getName(),departmentService.getDepartmentById(1l).getName());
     }
 
     @Test
-    void getDepartment() {
+    void getDepartmentTest() {
         when(departmentRepository.findAll()).thenReturn(Arrays.asList(department));
         assertEquals(1,departmentService.getDepartment().size());
     }
     @Test
-    void getDepartment_Empty() {
+    void getDepartmentTest_Empty() {
         when(departmentRepository.findAll()).thenReturn(null);
         assertNull(departmentService.getDepartment());
     }
 
     @Test
-    void dropDepartmentById() {
+    void dropDepartmentByIdTest() {
         departmentService.dropDepartmentById(1L);
         verify(departmentRepository,times(1)).deleteById(any());
     }

@@ -115,13 +115,13 @@ public class DepartmentControllerTest {
                 .andDo(print()).andExpect(status().isNotFound()).andExpect(content().string("failed to Update Department"));
     }
     @Test
-    void deleteDepartmentByID() throws Exception {
+    void deleteDepartmentByIDTest() throws Exception {
         when(departmentService.getDepartmentById(anyLong())).thenReturn(departmentOne);
         doNothing().when(departmentService).dropDepartmentById(anyLong());
         this.mockMvc.perform(delete("/departments/delete/1")).andDo(print()).andExpect(status().isOk());
     }
     @Test
-    void deleteDepartmentByID_NotFound() throws Exception {
+    void deleteDepartmentByIDTest_NotFound() throws Exception {
         when(departmentService.getDepartmentById(anyLong())).thenReturn(null);
         this.mockMvc.perform(delete("/departments/delete/1")).andDo(print()).andExpect(status().isNotFound());
     }
