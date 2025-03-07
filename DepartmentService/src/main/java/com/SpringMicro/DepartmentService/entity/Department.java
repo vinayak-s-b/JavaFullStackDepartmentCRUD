@@ -16,6 +16,15 @@ public class Department {
 	@Column(nullable = false)
 	private String name;
 
+	public Department() {
+		//Empty constructor
+	}
+
+	public Department(String name, String description) {
+		this.name = name;
+		this.description = description;
+	}
+
 	private String description;
 
 	public Long getId() {
